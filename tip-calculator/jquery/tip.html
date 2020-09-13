@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="tip.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tip Calculator</h1>
+    </header>
+    <main>
+        <div class="left_form">
+            <p>Bill</p>
+            <input type="text" id="bill" name="bill" value="0,00">
+            <p>Tip %</p>
+            <button id="tip_minus">-</button>
+            <input type="text" id="tip" name="tip" value="15%">
+            <button id="tip_plus">+</button>
+            <p>Number of people</p>
+            <button id="nop_minus">-</button>
+            <input type="text" id="nop" name="nop" value="1">
+            <button id="nop_plus">+</button>
+        </div>
+        <div class="right_form">
+            <div class="tip">
+                <h2>Tip</h2>
+                <span id="tip_per_person"></span>
+                <p class="pp"></p>
+            </div>
+            <div class="total">
+                <h2>Total</h2>
+                <span id="total_per_person"></span>
+                <p class="pp"></p>
+            </div>
+        </div>
+    </main>
+    <script src="tip.js"></script>
+</body>
+
+</html>
